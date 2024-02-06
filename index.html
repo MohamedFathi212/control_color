@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB TO HEX</title>
+    <link rel="stylesheet" href="css/stylee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="parent">
+    <center>
+        <img src="imgs/rgb.png" width="300px">
+        <br><br>
+        <div id="dd"></div>
+    </center>
+</div>
+
+<br><br>
+
+<div id="contaniner">
+    <table>
+        <tr>
+            <th>[RED]</th>
+            <th>[GREEN]</th>
+            <th>[BLUE]</th>
+        </tr>
+        <tr>
+
+            <td><input type="range" id="r" min="0" max="255" onchange="changecolor()"></td>
+            <td><input type="range" id="g" min="0" max="255" onchange="changecolor()"></td>
+            <td><input type="range" id="b" min="0" max="255" onchange="changecolor()"></td>
+
+        </tr>
+        <tr>
+
+            <td id="r-label">255</td>
+            <td id="g-label">255</td>
+            <td id="b-label">255</td>
+
+        </tr>
+    </table>
+    <h2 id="hex-label">#ffffff</h2>
+    <br>
+    <p>Mohamed Fathi</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
